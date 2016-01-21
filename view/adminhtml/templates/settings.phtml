@@ -1,0 +1,45 @@
+<?php
+
+$host = urlencode($block->getHost());
+$email = urlencode($block->getUserEmail());
+$jqueryUrl = "https://code.jquery.com/jquery-2.1.4.min.js";
+$affiliate = "265987";
+$partner = "magento";
+$source = "magento";
+$endpoint = "https://www.mcafeesecure.com";
+
+?>
+
+<div id="iframe-container">
+
+</div>
+
+<script src="<?php echo $jqueryUrl; ?>"></script>
+
+<script>
+	console.log("McAfee Secure Settings Loaded");
+
+	var $j = jQuery.noConflict();
+
+	$j(document).ready(function () {
+		loadPage();
+	});
+
+	function loadPage() {
+		var $iframeContainer = $j('#iframe-container');
+
+		var $iframe = $j("<iframe></iframe>");
+		$iframe.attr({
+			"width": "100%",
+			"height": "450px",
+			"seamless": true,
+			"scrolling": "no",
+			"frameborder": "0"
+		});
+
+
+		$iframe.attr("src", "<?php echo $endpoint; ?>/app/partner1/dashboard?form=login&aff=<?php echo $affiliate; ?>&source=<?php echo $partner; ?>&partner=<?php echo $partner; ?>&email=<?php echo $email; ?>&host=<?php echo $host; ?>");
+		$iframeContainer.html($iframe);
+	}
+
+</script>

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Icomoon';
+    src: url('fonts/icomoon.eot'); /* IE9 Compat Modes */
+    src: url('fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('fonts/icomoon.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.admin__menu #menu-mcafeesecure-mcafeesecure-menu > a:before {
+    font-family: 'Icomoon', sans-serif;
+    content: "\e900";
+}
