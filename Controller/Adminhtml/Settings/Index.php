@@ -29,6 +29,6 @@ class Index extends \Magento\Backend\App\Action
 
 	protected function _isAllowed()
 	{
-		return true;
+		return $this->_authorization->isAllowed('McAfeeSecure_McAfeeSecure::settings');
 	}
 }
