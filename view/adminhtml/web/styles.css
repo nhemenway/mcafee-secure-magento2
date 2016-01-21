@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Icomoon';
-    src: url('fonts/icomoon.eot'); /* IE9 Compat Modes */
-    src: url('fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
-    url('fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('fonts/icomoon.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'Mcafeesecure';
+    src: url('fonts/mcafeesecure.eot'); /* IE9 Compat Modes */
+    src: url('fonts/mcafeesecure.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/mcafeesecure.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('fonts/mcafeesecure.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .admin__menu #menu-mcafeesecure-mcafeesecure-menu > a:before {
-    font-family: 'Icomoon', sans-serif;
+    font-family: 'Mcafeesecure', sans-serif;
     content: "\e900";
 }
