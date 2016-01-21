@@ -18,13 +18,5 @@
   },
   "autoload": {
     "files": [ "registration.php" ]
-  },
-  "extra": {
-    "map": [
-      [
-        "*",
-        "McAfeeSecure/McAfeeSecure"
-      ]
-    ]
   }
 }
