@@ -1,1 +1,2 @@
-#McAfee SECURE Magento 2 Module 
+#McAfee SECURE Magento 2 Module
+ 
