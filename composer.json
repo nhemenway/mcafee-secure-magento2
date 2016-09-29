@@ -3,7 +3,7 @@
   "description": "McAfee SECURE module for Magento 2.",
   "type": "magento2-module",
   "keywords": ["security"],
-  "version": "0.0.5",
+  "version": "0.0.6",
   "authors": [
     {
       "name": "McAfee SECURE"
