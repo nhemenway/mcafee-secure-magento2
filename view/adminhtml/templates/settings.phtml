@@ -31,14 +31,14 @@ $endpoint = "https://www.mcafeesecure.com";
 		var $iframe = $j("<iframe></iframe>");
 		$iframe.attr({
 			"width": "100%",
-			"height": "450px",
+			"height": "900px",
 			"seamless": true,
 			"scrolling": "no",
 			"frameborder": "0"
 		});
 
 
-		$iframe.attr("src", "<?php echo $endpoint; ?>/app/partner1/dashboard?form=login&aff=<?php echo $affiliate; ?>&source=<?php echo $partner; ?>&partner=<?php echo $partner; ?>&email=<?php echo $email; ?>&host=<?php echo $host; ?>");
+		$iframe.attr("src", "<?php echo $endpoint; ?>/app/partner2/dashboard?form=login&aff=<?php echo $affiliate; ?>&source=<?php echo $partner; ?>&partner=<?php echo $partner; ?>&email=<?php echo $email; ?>&host=<?php echo $host; ?>");
 		$iframeContainer.html($iframe);
 	}
 
