@@ -2,11 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="McAfeeSecure_McAfeeSecure::menu" title="McAfee SECURE" module="McAfeeSecure_McAfeeSecure"
-             sortOrder="10" resource="McAfeeSecure_McAfeeSecure::menu"/>
-
-        <add id="McAfeeSecure_McAfeeSecure::settings" title="Settings" module="McAfeeSecure_McAfeeSecure"
+        <add id="McAfeeSecure_McAfeeSecure::settings" title="McAfee SECURE" module="McAfeeSecure_McAfeeSecure"
              sortOrder="10" resource="McAfeeSecure_McAfeeSecure::settings"
-             parent="McAfeeSecure_McAfeeSecure::menu" action="mcafeesecure/settings"/>
+             parent="Magento_Integration::system_extensions" action="mcafeesecure/settings"/>
     </menu>
 </config>

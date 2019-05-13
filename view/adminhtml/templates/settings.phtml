@@ -2,44 +2,39 @@
 
 $host = urlencode($block->getHost());
 $email = urlencode($block->getUserEmail());
-$jqueryUrl = "https://code.jquery.com/jquery-2.1.4.min.js";
 $affiliate = "265987";
 $partner = "magento";
 $source = "magento";
-$endpoint = "https://www.mcafeesecure.com";
+$endpoint = "https://trustedsite.com";
 
 ?>
 
 <div id="iframe-container">
-
 </div>
 
-<script src="<?php echo $jqueryUrl; ?>"></script>
-
 <script>
-	console.log("McAfee Secure Settings Loaded");
 
-	var $j = jQuery.noConflict();
+    require(['jquery'],function($){
 
-	$j(document).ready(function () {
-		loadPage();
-	});
+        $(document).ready(function () {
+            loadPage();
+        });
 
-	function loadPage() {
-		var $iframeContainer = $j('#iframe-container');
+        function loadPage() {
+            var $iframeContainer = $('#iframe-container');
 
-		var $iframe = $j("<iframe></iframe>");
-		$iframe.attr({
-			"width": "100%",
-			"height": "900px",
-			"seamless": true,
-			"scrolling": "no",
-			"frameborder": "0"
-		});
+            var $iframe = $("<iframe></iframe>");
+            $iframe.attr({
+                "width": "100%",
+                "height": "800px",
+                "seamless": true,
+                "scrolling": "yes",
+                "frameborder": "0"
+            });
 
-
-		$iframe.attr("src", "<?php echo $endpoint; ?>/app/partner2/dashboard?form=login&aff=<?php echo $affiliate; ?>&source=<?php echo $partner; ?>&partner=<?php echo $partner; ?>&email=<?php echo $email; ?>&host=<?php echo $host; ?>");
-		$iframeContainer.html($iframe);
-	}
-
+            $iframe.attr("src", "<?php echo $endpoint; ?>/app/partner2/signup?&aff=<?php echo $affiliate; ?>&source=<?php echo $partner; ?>&partner=<?php echo $partner; ?>&email=<?php echo $email; ?>&host=<?php echo $host; ?>"); 
+            $iframe.attr("style", "border: 1px solid rgba(0, 0, 0, 0.12);")
+            $iframeContainer.html($iframe);
+        }
+    });
 </script>
